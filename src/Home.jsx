@@ -29,21 +29,6 @@ function Home({prevChoice,updateComponent}) {
             setAllTask([]);
         }
     }
-    // const handleLevel = (choice) => {
-    //     fetchAll(choice).then(() => {
-    //       try {
-    //         const storedTask = JSON.parse(localStorage.getItem('allData'));
-    //         if (storedTask) {
-    //           setAllTask(storedTask);
-    //         } else {
-    //           setAllTask([]);
-    //         }
-    //       } catch (error) {
-    //         console.error('Error parsing data from local storage:', error);
-    //         setAllTask([]);
-    //       }
-    //     });
-    //   };
 
     const handleComplete = ()=> {
         if(selectedButton === allTask[indx].data.answer){
@@ -145,7 +130,7 @@ function Home({prevChoice,updateComponent}) {
             </div>
             
             <Modal className='text-dark' show={show}>
-                <Modal.Header closeButton>
+                <Modal.Header>
                     <h1 className='fw-bold'>RESULT</h1>
                 </Modal.Header>
 

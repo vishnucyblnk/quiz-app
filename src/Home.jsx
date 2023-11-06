@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
-import { fetchAll } from './fetch';
 function Home({prevChoice,updateComponent}) {
     const [show, setShow] = useState(false);
     const [allTask,setAllTask] = useState([]);

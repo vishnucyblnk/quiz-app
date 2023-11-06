@@ -96,7 +96,7 @@ function Home({prevChoice,updateComponent}) {
                         {
                             allTask[indx].data.options.map((item,index)=>(
                                 <div key={item.id} className='d-flex flex-column ps-5 pe-5'>
-                                    <button onClick={() => handleButtonClick(index)} className={`fw-bolder mb-3 p-3 btn ${selectedButton === index ? 'btn-dark' : 'btn-outline-dark'}`} type='button' >{item}</button> 
+                                    <button onClick={() => handleButtonClick(index)} className={`fw-bolder mb-3 p-3 btn ${selectedButton === index ? 'btn-info' : 'btn-outline-dark'}`} type='button' >{item}</button> 
                                 </div>
                             )) 
                         }     
